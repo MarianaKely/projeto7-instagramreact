@@ -11,6 +11,8 @@ body {
   overflow-x: hidden;
 }
 
+/* global styling - end */
+
  /* stylization of App.js page - outset */
 .container {
   justify-content: center;
@@ -18,4 +20,60 @@ body {
 
 /* stylization of App.js page - end */
 
-/* global styling - end */
+/* stylization of Headerbar.js page - outset */
+
+.headerbar {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  .headerbartop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logoicon {
+    margin-left: 0px;
+  }
+  
+  .logo .logoimage {
+    border-left: 1px solid #dbdbdb;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  .forresearch {
+    width: 215px;
+    height: 26px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;    
+  }
+  .forresearch::placeholder {
+    text-align: center;
+  }
+  .iconbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .iconbox ion-icon {
+    margin-left: 20px;
+  }
+
+/* stylization of Headerbar.js page - end */  
+
