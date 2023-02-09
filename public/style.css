@@ -82,6 +82,8 @@ body {
 
 /* stylization of Headerbar.js page - end */  
 
+/* stylization of Stories.js page - outset */  
+
 .storiesbar {
     height: 118px;
     display: flex;
@@ -132,7 +134,21 @@ body {
     left: 5px;
     top: 5px;
 }
-  
-  
+
+/* stylization of Headerbar.js page - end */  
+
+/* stylization of Pageorganization.js page - outset */  
+.themiddlepart {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.centralpartcontent {
+    width: 614px;
+}
+
+/* stylization of Pageorganization.js page - end */   
   
   

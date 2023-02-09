@@ -5,7 +5,7 @@ export default function App({ pageconstruction }) {
     return (
       <div className="container">
         <Headerbar />
-       
+        <Pageorganization pageconstruction={pageconstruction} />
       </div>
     );
   }
