@@ -34,46 +34,105 @@ body {
     top: 0;
     left: 0;
     z-index: 3;
-  }
+}
   
-  .headerbartop {
+.headerbartop {
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 22px;
-  }
+}
 
-  .logo {
+.logo {
     display: flex;
     align-items: center;
-  }
-  .logoicon {
+}
+
+.logoicon {
     margin-left: 0px;
-  }
+}
   
-  .logo .logoimage {
+.logo .logoimage {
     border-left: 1px solid #dbdbdb;
     padding-left: 10px;
     margin-left: 10px;
-  }
-  .forresearch {
+}
+
+.forresearch {
     width: 215px;
     height: 26px;
     border-radius: 3px;
     border: 1px solid #dbdbdb;
     background-color: #fafafa;    
-  }
-  .forresearch::placeholder {
+}
+
+.forresearch::placeholder {
     text-align: center;
-  }
-  .iconbox {
+}
+
+.iconbox {
     display: flex;
     align-items: center;
-  }
+}
   
-  .iconbox ion-icon {
+.iconbox ion-icon {
     margin-left: 20px;
-  }
+}
 
 /* stylization of Headerbar.js page - end */  
 
+.storiesbar {
+    height: 118px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+.arrow {
+   
+    color: #8e8e8e;
+    font-size: 25px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    z-index: 3;
+}
+
+.uniquestory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 14px;
+    max-width: 66px;
+}
+
+.uniquestory:nth-child(1) {
+    margin-left: 23px;
+}  
+
+.story {
+    width: 66px;
+    height: 66px;
+    position: relative;
+}
+
+.story .pinkborder {
+    position: absolute;
+    width: 66px;
+}
+  
+.story .storyimage {
+    position: absolute;
+    width: 56px;
+    left: 5px;
+    top: 5px;
+}
+  
+  
+  
+  
