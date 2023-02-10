@@ -404,14 +404,30 @@ ion-icon{
 }
 
 .mobileheaderbar ion-icon{
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
 .mobileheaderbar img{
-    margin-left: 38%;
-    margin-right: 38%;
+    margin-left: 37%;
+    margin-right: 37%;
     cursor: pointer;
 }
+
+.mobilefooterbar {
+    display: none;    
+}
+
+.mobilefooterbar ion-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 19%;
+    cursor: pointer;
+}
+ .mobilefooterbar ion-icon:nth-child(1){
+    margin-left: 2%;
+ }
 
 @media screen and (max-width: 614px) {
 
@@ -442,10 +458,24 @@ ion-icon{
 
     .post {
         width: 100%;
-      }
-      .theimage img {
+    }
+    .theimage img {
         width: 100%;
-      }
+     }
+
+    .mobilefooterbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: #ffffff;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        display: inline;
+    }
 
     .headerbar {
       display: none;

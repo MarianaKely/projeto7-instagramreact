@@ -1,6 +1,7 @@
 import Headerbar from "./Headerbar";
 import Mobileheaderbar from "./Mobileheaderbar";
 import Pageorganization from "./Pageorganization";
+import Mobilefooterbar from "./Mobilefooterbar";
 
 
 export default function App({ pageconstruction }) {
@@ -9,6 +10,7 @@ export default function App({ pageconstruction }) {
         <Headerbar />
         <Mobileheaderbar />
         <Pageorganization pageconstruction={pageconstruction} />
+        <Mobilefooterbar/>
       </div>
     );
   }

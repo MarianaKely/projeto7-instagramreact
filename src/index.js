@@ -51,7 +51,7 @@ const pageconstruction = {
       userprofilename: "Taylor Swift",
       postprofilepicture: "./assets/taypost.jpg",
       likes: 130000000,
-      userwholikedpicture: "./assets/mommyT.jpg",
+      userwholikedpicture: "./assets/taypost3.jpg",
       userwholikedname: "alissonh",
     },
     {
@@ -59,7 +59,7 @@ const pageconstruction = {
       userprofilename: "Taylor Swift",
       postprofilepicture: "./assets/taypost2.jpg",
       likes: 4236215870,
-      userwholikedpicture: "./assets/mommyT.jpg",
+      userwholikedpicture: "./assets/taypost4.jpg",
       userwholikedname: "tsfanclub",
     },
   ],
