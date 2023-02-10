@@ -5,7 +5,6 @@ export default function Stories({ pageconstruction }) {
         {storiesbox.map((story) => (
           <Story key={story.picture} story={story} />
         ))}
-        <ion-icon name="chevron-forward-outline"></ion-icon>
       </div>
     );
   }

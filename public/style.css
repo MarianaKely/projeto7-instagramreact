@@ -61,6 +61,7 @@ ion-icon{
     border-left: 1px solid #dbdbdb;
     padding-left: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .forresearch {
@@ -97,18 +98,11 @@ ion-icon{
     background-color: #ffffff;
     overflow: hidden;
     position: relative;
+    overflow-x: scroll;
 }
 
-.storiesbar ion-icon{
-    background-color: white;
-    color: #8e8e8e;
-    border: 1px solid #8e8e8e;
-    border-radius: 26px;
-    font-size: 26px;
-    position: absolute;
-    right: 10px;
-    z-index: 3;
-    cursor: pointer;
+.storiesbar::-webkit-scrollbar {
+    display: none;
 }
 
 .uniquestory {
@@ -117,6 +111,7 @@ ion-icon{
     align-items: center;
     margin-right: 14px;
     max-width: 66px;
+    cursor: pointer;
 }
 
 .uniquestory:nth-child(1) {
@@ -201,11 +196,13 @@ ion-icon{
     height: 32px;
     margin-right: 25px;
     border-radius:20px;
+    cursor: pointer;
 }
   
 .theuser {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .theimage {
@@ -214,6 +211,7 @@ ion-icon{
 
 .theimage img{
     width: 612px;
+    cursor: pointer;
 }
 
 .likesbox{
@@ -253,6 +251,7 @@ ion-icon{
     height: 20px;
     border-radius: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .red ion-icon {
@@ -333,6 +332,7 @@ ion-icon{
     color: #262626;
     font-size: 12px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .sugestion {
@@ -343,11 +343,13 @@ ion-icon{
   
 .sugestion img {
     margin-right: 11px;
+    cursor: pointer;
 }
 
 .optionprofilename {
     font-size: 13px;
     margin-bottom: 6px;
+    cursor: pointer;
 }
 
 .thesuggestedprofiles {
@@ -371,6 +373,7 @@ ion-icon{
     font-weight: 500;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .notes {
@@ -379,11 +382,13 @@ ion-icon{
     margin-top: 33px;
     margin-bottom: 18px;
     line-height: 14px;
+    cursor: pointer;
 }
   
 .text-copyright {
     font-size: 11px;
     color: #c7c7c7;
+    cursor: pointer;
 }
 
 /* stylization of Suggestedprofiles.js page - end */  
