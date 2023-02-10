@@ -170,6 +170,7 @@ ion-icon{
 
 .post {
     width: 614px;
+    height: 749px;
     margin-bottom: 60px;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
@@ -180,7 +181,7 @@ ion-icon{
     margin-top: 33px;
 }
 
-.post:nth-child(3){
+.post:nth-child(5){
     margin-bottom: -40px;
 }
 
@@ -211,6 +212,7 @@ ion-icon{
 
 .theimage img{
     width: 612px;
+    height: 614px;
     cursor: pointer;
 }
 

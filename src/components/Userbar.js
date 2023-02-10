@@ -4,15 +4,15 @@ export default function Userbar({ user }) {
   const [username, setUsername] = useState(user.username);
   const [photo, setPhoto] = useState(user.picture);
   function changeUsername() {
-    const newUsername = prompt("Digite o novo nome...");
+    const newUsername = prompt("Coloque aqui seu novo nome...");
     if (!newUsername) {
-      alert("Nome vazio!");
+      alert("SEM IDENTIFICAÇÃO DE NOME!");
     } else setUsername(newUsername);
   }
   function changePhoto() {
-    const newPhoto = prompt("Digite o novo link...");
+    const newPhoto = prompt("Coloque aqui sua nova foto...");
     if (!newPhoto) {
-      alert("Link vazio!");
+      alert("SEM IDENTIFICAÇÃO DE LINK DE IMAGEM!");
     } else setPhoto(newPhoto);
   }
   return (

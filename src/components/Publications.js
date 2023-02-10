@@ -12,9 +12,9 @@ export default function pageconstruction({ pageconstruction }) {
 }    
 
 function Post ({ publication }) {
-  const [saved, setSaved] = useState(false);
-  const [liked, setLiked] = useState(false);
-  const [likes, setLikes] = useState(publication.likes);
+  const [shelvedfile, setShelvedfile] = useState(false);
+  const [tallyoflikes, setTallyoflikes] = useState(false);
+  const [numberrendering, setNumberrendering] = useState(publication.likes);
   return (
     <div className="post" data-test="post">
       <div className="postoutset">
@@ -28,12 +28,12 @@ function Post ({ publication }) {
         <img
           data-test="post-image"
           onClick={() => {
-            setLiked((prevState) => {
-              if (!prevState) {
-                setLikes((touch) => touch + 1);
-                prevState = !prevState;
+            setTallyoflikes((bonusfunctioncontroller) => {
+              if (!bonusfunctioncontroller) {
+                setNumberrendering((touch) => touch + 1);
+                bonusfunctioncontroller = !bonusfunctioncontroller;
               }
-              return prevState;
+              return bonusfunctioncontroller;
             });
           }}
           className="postprofile"
@@ -44,19 +44,19 @@ function Post ({ publication }) {
         <div className="biglikesbox">
         <div className="likesboxtwo">
           <div>
-            <span className={liked ? "red" : null}>
+            <span className={tallyoflikes ? "red" : null}>
               <ion-icon data-test="like-post"
                 onClick={() =>
-                    setLiked((prevState) => {
-                    if (prevState) {
-                        setLikes((prev) => prev - 1);
+                    setTallyoflikes((bonusfunctioncontroller) => {
+                    if (bonusfunctioncontroller) {
+                      setNumberrendering((prev) => prev - 1);
                     } else {
-                        setLikes((prev) => prev + 1);
+                        setNumberrendering((prev) => prev + 1);
                     }
-                    return !prevState;
+                    return !bonusfunctioncontroller;
                   })
                 }
-                name={liked ? "heart" : "heart-outline"}
+                name={tallyoflikes ? "heart" : "heart-outline"}
               ></ion-icon>
             </span>
             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -64,8 +64,8 @@ function Post ({ publication }) {
           </div>
           <div className="likesboxthree">
           <ion-icon  data-test="save-post"
-            onClick={() => setSaved((prevState) => !prevState)}
-            name={saved ? "bookmark" : "bookmark-outline"}
+            onClick={() => setShelvedfile((bonusfunctioncontroller) => !bonusfunctioncontroller)}
+            name={shelvedfile ? "bookmark" : "bookmark-outline"}
           ></ion-icon>
         </div>
         </div>
@@ -76,7 +76,7 @@ function Post ({ publication }) {
           <strong>
             outras{" "}
             <span>
-              {likes.toLocaleString().replace(",", ".")}
+              {numberrendering.toLocaleString().replace(",", ".")}
             </span>{" "}
             pessoas
           </strong>

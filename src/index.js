@@ -3,19 +3,23 @@
 import ReactDOM from "react-dom";
 import App from "./components/App.js";
 
-const root = document.querySelector(".root");
 
 const pageconstruction = {
     storiesbox: [
     { picture: "./assets/shrek.jpg", storyusername: "Shrek" },
     { picture: "./assets/barbie.jpg", storyusername: "barbiegirl" },
+    { picture: "./assets/woody.jpg", storyusername: "wOOdy" },
     { picture: "./assets/elsa.jpg", storyusername: "IceQueen" },
     { picture: "./assets/boo.jpg", storyusername: "boo" },
     { picture: "./assets/bibble.jpg", storyusername: "LittleBibble" },
+    { picture: "./assets/jessie.jpg", storyusername: "JS" },
     { picture: "./assets/dunkey.jpg", storyusername: "Dunkeyyy" },
     { picture: "./assets/pb.jpg", storyusername: "Pz&Btz" },
+    { picture: "./assets/dino.jpg", storyusername: "dinosour" },
     { picture: "./assets/anna.jpg", storyusername: "AnnaArendelle" },
     { picture: "./assets/mw.jpg", storyusername: "mikewakowski" },
+    { picture: "./assets/buzz.jpg", storyusername: "BZZZZZ" },
+    { picture: "./assets/fiona.jpg", storyusername: "MrsShrek" },
   ],
   publicationsbox: [
     {
@@ -42,6 +46,22 @@ const pageconstruction = {
       userwholikedpicture: "./assets/spmFOUR.jpeg",
       userwholikedname: "SPIDERMAN",
     },
+    {
+      userprofilepicture: "./assets/TSONE.jpg",
+      userprofilename: "Taylor Swift",
+      postprofilepicture: "./assets/taypost.jpg",
+      likes: 130000000,
+      userwholikedpicture: "./assets/mommyT.jpg",
+      userwholikedname: "alissonh",
+    },
+    {
+      userprofilepicture: "./assets/TSONE.jpg",
+      userprofilename: "Taylor Swift",
+      postprofilepicture: "./assets/taypost2.jpg",
+      likes: 4236215870,
+      userwholikedpicture: "./assets/mommyT.jpg",
+      userwholikedname: "tsfanclub",
+    },
   ],
   user: {
     username: "mommyT",
@@ -55,6 +75,8 @@ const pageconstruction = {
     { picture: "./assets/tsfanclub.jpg", username: "TSfanclub" },
   ],
 };
+
+const root = document.querySelector(".root");
 
 ReactDOM.render(<App pageconstruction={pageconstruction} />, root);
 
