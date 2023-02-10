@@ -7,15 +7,15 @@ const root = document.querySelector(".root");
 
 const pageconstruction = {
     storiesbox: [
-    { picture: "./assets/shrek.jpg", username: "Shrek" },
-    { picture: "./assets/barbie.jpg", username: "barbiegirl" },
-    { picture: "./assets/elsa.jpg", username: "IceQueen" },
-    { picture: "./assets/boo.jpg", username: "boo" },
-    { picture: "./assets/bibble.jpg", username: "LittleBibble" },
-    { picture: "./assets/dunkey.jpg", username: "Dunkeyyy" },
-    { picture: "./assets/pb.jpg", username: "Pz&Btz" },
-    { picture: "./assets/anna.jpg", username: "AnnaArendelle" },
-    { picture: "./assets/mw.jpg", username: "mikewakowski" },
+    { picture: "./assets/shrek.jpg", storyusername: "Shrek" },
+    { picture: "./assets/barbie.jpg", storyusername: "barbiegirl" },
+    { picture: "./assets/elsa.jpg", storyusername: "IceQueen" },
+    { picture: "./assets/boo.jpg", storyusername: "boo" },
+    { picture: "./assets/bibble.jpg", storyusername: "LittleBibble" },
+    { picture: "./assets/dunkey.jpg", storyusername: "Dunkeyyy" },
+    { picture: "./assets/pb.jpg", storyusername: "Pz&Btz" },
+    { picture: "./assets/anna.jpg", storyusername: "AnnaArendelle" },
+    { picture: "./assets/mw.jpg", storyusername: "mikewakowski" },
   ],
   publicationsbox: [
     {

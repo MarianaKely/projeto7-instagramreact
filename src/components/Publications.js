@@ -45,7 +45,7 @@ function Post ({ publication }) {
         <div className="likesboxtwo">
           <div>
             <span className={liked ? "red" : null}>
-              <ion-icon
+              <ion-icon data-test="like-post"
                 onClick={() =>
                     setLiked((prevState) => {
                     if (prevState) {
@@ -57,27 +57,25 @@ function Post ({ publication }) {
                   })
                 }
                 name={liked ? "heart" : "heart-outline"}
-                data-test="like-post"
               ></ion-icon>
             </span>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div className="likesboxthree">
-          <ion-icon
+          <ion-icon  data-test="save-post"
             onClick={() => setSaved((prevState) => !prevState)}
             name={saved ? "bookmark" : "bookmark-outline"}
-            data-test="save-post"
           ></ion-icon>
         </div>
         </div>
         </div>
-        <div className="likesconfig">
+        <div className="likesconfig" data-test="likes-number">
           <img src={publication.userwholikedpicture} />
           Curtido por&nbsp;<strong>{publication.userwholikedname}</strong>&nbsp;e&nbsp;
           <strong>
             outras{" "}
-            <span data-test="likes-number">
+            <span>
               {likes.toLocaleString().replace(",", ".")}
             </span>{" "}
             pessoas

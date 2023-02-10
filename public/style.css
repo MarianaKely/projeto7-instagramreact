@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+ion-icon{
+    cursor: pointer;
+}
+
 /* global styling - end */
 
  /* stylization of App.js page - outset */
@@ -95,14 +99,16 @@ body {
     position: relative;
 }
 
-.arrow {
-   
-    color: #8e8e8e;
-    font-size: 25px;
+.storiesbar ion-icon{
     background-color: white;
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    border-radius: 26px;
+    font-size: 26px;
     position: absolute;
     right: 10px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .uniquestory {
@@ -127,6 +133,11 @@ body {
     position: absolute;
     width: 66px;
 }
+
+.storyname {
+    font-size: 12px;
+    font-weight: normal;
+  }
   
 .story .storyimage {
     width: 56px;
@@ -187,6 +198,7 @@ body {
 
 .postoutset img {
     width: 32px;
+    height: 32px;
     margin-right: 25px;
     border-radius:20px;
 }
@@ -278,3 +290,26 @@ body {
     height: fit-content;
   }
 /* stylization of Sidebar.js page - end */  
+
+/* stylization of Userbarbar.js page - outset */  
+
+.personalprofile {
+    display: flex;
+    align-items: center;
+}
+
+.personalprofile img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+.personalprofilename {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+}
+
+/* stylization of Userbarbar.js page - end */  
