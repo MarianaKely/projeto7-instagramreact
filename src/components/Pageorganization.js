@@ -1,6 +1,6 @@
 import Stories from "./Stories";
 import Publications from "./Publications";
-
+import Sidebar from "./Sidebar";
 
 export default function Pageorganization({ pageconstruction }) {
   return (
@@ -9,7 +9,7 @@ export default function Pageorganization({ pageconstruction }) {
         <Stories pageconstruction={pageconstruction} />
         <Publications pageconstruction={pageconstruction} />
       </div>
-      
+      <Sidebar pageconstruction={pageconstruction} />
     </div>
   );
 } 

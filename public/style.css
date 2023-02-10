@@ -269,4 +269,12 @@ body {
 
 /* stylization of Publications.js page - end */  
 
-    
+/* stylization of Sidebar.js page - outset */ 
+
+.sidebar {
+    width: 293px;
+    margin-top: 66px;
+    margin-left: 28px;
+    height: fit-content;
+  }
+/* stylization of Sidebar.js page - end */  
