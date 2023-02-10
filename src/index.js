@@ -31,7 +31,7 @@ const pageconstruction = {
       userprofilename: "LukeSkywalker",
       postprofilepicture: "./assets/luke.jpeg",
       likes: 659,
-      userwholikedpicture: "./assets/Dobby.jpg",
+      userwholikedpicture: "./assets/Dobby.jpeg",
       userwholikedname: "DoBbYbOy",
     },
     {
@@ -56,8 +56,6 @@ const pageconstruction = {
     { picture: "./assets/tsfanclub.jpg", username: "TSfanclub" },
   ],
 };
-
-
 
 ReactDOM.render(<App pageconstruction={pageconstruction} />, root);
 

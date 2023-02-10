@@ -129,10 +129,12 @@ body {
 }
   
 .story .storyimage {
-    position: absolute;
     width: 56px;
+    height: 56px;
+    border-radius: 28px;
     left: 5px;
     top: 5px;
+    position: absolute;
 }
 
 /* stylization of Headerbar.js page - end */  
@@ -147,8 +149,124 @@ body {
 
 .centralpartcontent {
     width: 614px;
+    margin-top: 33px;
 }
 
 /* stylization of Pageorganization.js page - end */   
+
+/* stylization of Publications.js page - outset */   
+  
+.postsbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 614px;
+    margin-bottom: 60px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.post:nth-child(1){
+    margin-top: 33px;
+}
+
+.post:nth-child(3){
+    margin-bottom: -40px;
+}
+
+.postoutset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 17px 13px 17px;
+}
+
+.postoutset img {
+    width: 32px;
+    margin-right: 25px;
+    border-radius:20px;
+}
+  
+.theuser {
+    display: flex;
+    align-items: center;
+}
+
+.theimage {
+    position: relative;
+}
+
+.theimage img{
+    width: 612px;
+}
+
+.likesbox{
+    padding: 10px;
+}
+
+.biglikesbox{
+    width: 100%;
+}
+
+.likesboxtwo{
+    margin-bottom: 3%;
+    margin-left: 10px;
+}
+
+.likesboxtwo ion-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.likesboxthree{
+    display: flex;
+    justify-content: end;
+    margin-left: 90%;
+    margin-top: -3%;
+}
+  
+.likesconfig {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.likesconfig img{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.red ion-icon {
+    color: red;
+  }
   
   
+.post-heart {
+   position: absolute;
+   left: calc(50% - 100px);
+   top: calc(50% - 100px);
+}
+  
+.post-heart ion-icon {
+   color: white;
+   scale: 0.2;
+   visibility: hidden;
+   font-size: 200px;
+}
+  
+.post-heart.icon-show ion-icon {
+   scale: 1;
+   visibility: visible;
+   transition: scale 250ms linear;
+}
+
+/* stylization of Publications.js page - end */  
+
+    
