@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 export default function Userbar({ user }) {
-  const [subusername, setSubusername] = useState(user.subusername);
+  const [username, setUsername] = useState(user.username);
   const [photo, setPhoto] = useState(user.picture);
-  function changeSubusername() {
+  function changeUsername() {
     const newUsername = prompt("Digite o novo nome...");
     if (!newUsername) {
       alert("Nome vazio!");
-    } else setSubusername(newUsername);
+    } else setUsername(newUsername);
   }
   function changePhoto() {
     const newPhoto = prompt("Digite o novo link...");
@@ -19,11 +19,13 @@ export default function Userbar({ user }) {
     <div className="personalprofile" data-test="user">
       <img onClick={changePhoto} data-test="profile-image" src={photo} />
       <div>
-          <span className="personalprofilename" data-test="name">{user.username}</span>
-          <span> 
-            <ion-icon onClick={changeSubusername} name="pencil-outline" data-test="edit-name"></ion-icon>
+        <div>
+          <span className="personalprofilename" data-test="name">
+            {username}
           </span>
+           <ion-icon onClick={changeUsername} name="pencil-outline" data-test="edit-name"></ion-icon> 
         </div>
       </div>
+     </div> 
   );
 }

@@ -45,7 +45,6 @@ const pageconstruction = {
   ],
   user: {
     username: "mommyT",
-    subusername: "mommyT",
     picture: "./assets/mommyT.jpg",
   },
   sugestionsbox: [

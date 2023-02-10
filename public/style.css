@@ -41,7 +41,7 @@ ion-icon{
 }
   
 .headerbartop {
-    width: 75%;
+    width: 72%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -302,7 +302,7 @@ ion-icon{
     width: 56px;
     height: 56px;
     border-radius: 28px;
-    margin-right: 17px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -313,3 +313,77 @@ ion-icon{
 }
 
 /* stylization of Userbarbar.js page - end */  
+
+/* stylization of Suggestedprofiles.js page - outset */  
+
+.sugestionsbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    margin-bottom: 17px;
+}
+
+.suggestionsforyou {
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.seeall {
+    color: #262626;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sugestion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+  
+.sugestion img {
+    margin-right: 11px;
+}
+
+.optionprofilename {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.thesuggestedprofiles {
+    display: flex;
+}
+
+.thesuggestedprofiles img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.followyou {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.follow {
+    color: #139ef2;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.notes {
+    font-size: 11px;
+    color: #c7c7c7;
+    margin-top: 33px;
+    margin-bottom: 18px;
+    line-height: 14px;
+}
+  
+.text-copyright {
+    font-size: 11px;
+    color: #c7c7c7;
+}
+
+/* stylization of Suggestedprofiles.js page - end */  
